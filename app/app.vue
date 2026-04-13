@@ -1,6 +1,10 @@
+<script setup lang="ts">
+const { loggedIn } = useAuth()
+</script>
+
 <template>
 	<div>
 		<NuxtRouteAnnouncer />
-		<Button>Test</Button>
+		<Button>{{ loggedIn }}</Button>
 	</div>
 </template>
